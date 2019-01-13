@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  color: #737373;
+  font-weight: 300;
+}
+
+/* ## comment rating
+--------------------------------------------- */
+.awcr-comment-rating {
+	border: none;
+	padding: 0;
+	margin-left: 0;
+}
+.awcr-comment-rating label {
+	display: inline-block;
+}
+.awcr-rating-label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    top: -10px;
+    position: relative;
+}
+.awcr-rating-container {
+	font-size: 0;
+	unicode-bidi: bidi-override;
+	direction: rtl;
+}
+.awcr-rating-container * {
+	font-size: 1.4rem;
+}
+.awcr-rating-container > input {
+	display: none;
+}
+
+.awcr-rating-container > input + label {
+	font-family: 'dashicons';
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 9999px;
+	width: 1em;
+	white-space: nowrap;
+	cursor: pointer;
+	margin: 0;
+	font-size: 23px;
+}
+
+.awcr-rating-container > input + label:before {
+	display: inline-block;
+	text-indent: -9999px;
+	content: "\f154";
+	color: #888;
+}
+
+.awcr-rating-container > input:checked ~ label:before,
+.awcr-rating-container > input + label:hover ~ label:before,
+.awcr-rating-container > input + label:hover:before {
+	content: "\f155";
+	color: #FFBF00;
+	text-shadow: 0 0 1px #333;
+}
+
+.awcr-rating-container > .star-cb-clear + label {
+	text-indent: -9999px;
+	width: .5em;
+	margin-left: -.5em;
+}
+
+.awcr-rating-container > .star-cb-clear + label:before {
+	width: .5em;
+}
+
+.awcr-rating-container:hover > input + label:before {
+	content: "\f154";
+	color: #888;
+	text-shadow: none;
+}
+
+.awcr-rating-container:hover > input + label:hover ~ label:before,
+.awcr-rating-container:hover > input + label:hover:before {
+	content: "\f155";
+	color: #FFBF00;
+	text-shadow: 0 0 1px #333;
+}
+
+.comment-respond .awcr-rating-container > .star-cb-clear + label, .comment-respond .awcr-rating-container > input + label:before {
+	text-indent: 9999px;
+}
+
+.comment-respond .awcr-rating-container > input + label {
+	text-indent: -9999px;
+}
+
+/* dashicons */
+.awcr-average-rating-bar .dashicons, .dashicons-before:before {
+    display: inline-block;
+    width: unset;
+    height: unset;
+}
+.awcr-average-rating-bar .star-filled {
+  color: #ffbf00;
+  font-size: 25px;
+}
+.awcr-average-rating-bar .star-empty {
+  color: #989898;
+  font-size: 25px;
+}
+
+
+/* ## google histogram
+--------------------------------------------- */
+.awcr-google-histogram-container {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #EFEFEF;
+  padding: 4px;
+}
+.awcr-google-histogram-container .inner {
+  padding: 1em;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px; 
+}
+.awcr-google-histogram-container .rating {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
+.awcr-google-histogram-container .rating-num {
+  color: #333333;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 1em; 
+}
+.awcr-google-histogram-container .rating-stars {
+  font-size: 20px;
+  color: #E3E3E3;
+  margin-bottom: .5em;
+}
+.awcr-google-histogram-container .rating-stars .active {
+  color: #737373;
+}
+.awcr-google-histogram-container .rating-users {
+  font-size: 14px;
+}
+.awcr-google-histogram-container .histo {
+  float: left;
+  width: 50%;
+  font-size: 13px;
+}
+.awcr-google-histogram-container .histo-star {
+  float: left;
+  padding: 3px;
+
+}
+.awcr-google-histogram-container .histo-rate {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.awcr-google-histogram-container .bar-block {
+  margin-left: 5px;
+  color: black;
+  display: block;
+  float: left;
+  width: 75%;
+  position: relative;
+}
+.awcr-google-histogram-container .awcr_bar {
+  padding: 4px;
+  display: -webkit-inline-box;
+}
+.awcr-google-histogram-container #awcr-bar-five {
+  width: 0;
+  background-color: #9FC05A;
+}
+.awcr-google-histogram-container #awcr-bar-four {
+  width: 0;
+  background-color: #ADD633;
+}
+.awcr-google-histogram-container #awcr-bar-three {
+  width: 0;
+  background-color: #FFD834;
+}
+.awcr-google-histogram-container #awcr-bar-two {
+  width: 0;
+  background-color: #FFB234;
+}
+.awcr-google-histogram-container #awcr-bar-one {
+  width: 0;
+  background-color: #FF8B5A;
+}
+
+/* ## awcr gaming
+--------------------------------------------- */
+.awcr-gaming .header {
+  position: relative;
+  overflow: hidden;
+}
+.awcr-gaming .header img {
+  position: absolute;
+  top: -90%;
+  width: 100%;
+  filter: blur(20px) brightness(50%);
+  z-index: 0;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.awcr-gaming .content {
+  text-align: center;
+  position: relative;
+  color: #fff;
+  padding: 30px 10px;
+}
+.awcr-gaming .content h3 {
+    font-size: 20px;
+    color: #fff;
+}
+.awcr-gaming .rate {
+  display: inline-block;
+  height: 101px;
+  width: 100px;
+  padding-top: 18px;
+  border-radius: 80px;
+  text-align: center;
+  margin-top: 6px;
+  font-size: 45px;
+  line-height: 58px;
+  color: #fff;
+  font-weight: 700;
+}
+.awcr-gaming .rate span {
+  display: block;
+  line-height: 5px;
+  font-size: 14px;
+}
+.awcr-gaming .rate1{background:#e02f00}
+.awcr-gaming .rate2{background:#f55d00}
+.awcr-gaming .rate3{background:#ff8b00}
+.awcr-gaming .rate4{background:#ffaf00}
+.awcr-gaming .rate5{background:#f1ba00}
+.awcr-gaming .rate6{background:#c2ba00}
+.awcr-gaming .rate7{background:#81b500}
+.awcr-gaming .rate8{background:#43a700}
+.awcr-gaming .rate9{background:#109c00}
+.awcr-gaming .rate10{background:#109c00}
+
+
+/**/
+
+.plugin-ratings .ratings-list {
+    list-style-type: none;
+    margin: 16px 0;
+    margin: 1rem 0;
+    padding: 0;
+}
+.plugin-ratings .ratings-list .counter-container, .plugin-ratings .ratings-list .counter-container a {
+    text-decoration: none;
+    width: 100%;
+}
+.plugin-ratings .ratings-list .counter-label {
+    display: inline-block;
+    min-width: 65px;
+}
+.plugin-ratings .ratings-list .counter-back {
+    background-color: #ececec;
+    width: 58%;
+    width: -webkit-calc(100% - 130px);
+    width: calc(100% - 130px);
+    display: inline-block;
+    height: 16px;
+    height: 1rem;
+    vertical-align: middle;
+}
+.plugin-ratings .ratings-list .counter-back, .plugin-ratings .ratings-list .counter-bar {
+    display: inline-block;
+    height: 16px;
+    height: 1rem;
+    vertical-align: middle;
+}
+.plugin-ratings .ratings-list .counter-bar {
+    background-color: #ffc733;
+    display: block;
+}
+.plugin-ratings .ratings-list .counter-count {
+    margin-left: 3px;
+}
+
+/* ## gauge chart
+--------------------------------------------- */
+.awcr-gauge-chart-row:after {
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
+}
+.awcr-gauge-chart-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.awcr-gauge-chart-left {
+  width: 50%;
+}
+.awcr_gauge_chart {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.awcr-gauge-chart-info {
+  font-size: 13px;
+  text-align: center;
+}
+.gauge-chart-bar-counter {
+  float: right;
+  padding-right: 5px;
+}
+.gauge-chart-bar-gap-top {
+  margin-top: 4px;
+}
+.gauge-chart-bar-gap {
+  margin-bottom: 5px;
+}
+.gauge-chart-five-star, .gauge-chart-five-star:hover {
+  padding-left: 5px;
+  height: 24px;
+  font-size: 13px;
+}
+.gauge-chart-four-star, .gauge-chart-four-star:hover {
+  padding-left: 5px;
+  height: 24px;
+  font-size: 13px;
+}
+.gauge-chart-three-star, .gauge-chart-three-star:hover {
+  padding-left: 5px;
+  height: 24px;
+  font-size: 13px;
+}
+.gauge-chart-two-star, .gauge-chart-two-star:hover {
+  padding-left: 5px;
+  height: 24px;
+  font-size: 13px;
+}
+.gauge-chart-one-star, .gauge-chart-one-star:hover {
+  padding-left: 5px;
+  height: 24px;
+  font-size: 13px;
+}
