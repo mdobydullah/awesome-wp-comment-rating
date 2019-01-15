@@ -10,7 +10,6 @@ add_action( 'wp_enqueue_scripts', 'awcr_comment_rating_styles' );
 function awcr_comment_rating_styles() {
 	wp_enqueue_style('awcp-comment-rating-styles', plugin_dir_url( __FILE__ ) . 'css/style.css' );
 	wp_enqueue_style( 'dashicons' );
-	wp_register_script('awcp-comment-rating-script', plugins_url('js/jquery.js', __FILE__), array('jquery'),'3.3.1', true);
 }
 
 // load settings data

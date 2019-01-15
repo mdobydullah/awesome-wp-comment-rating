@@ -2,7 +2,7 @@
 Contributors: obydul
 Donate link: https://obydul.me/donate
 Tags: post rating, page rating, comment rating, rating, reviews, ratings, stars, rating stars, star rating, vote, votes, comment star field, postratings
-Requires at least: 4.4
+Requires at least: 3.2
 Tested up to: 5.0.3
 Stable tag: 1.0
 License: GPLv2 or later
