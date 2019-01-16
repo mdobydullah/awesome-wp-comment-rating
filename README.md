@@ -8,7 +8,7 @@ Download from [WordPress Plugin Directory](https://wordpress.org/plugins/awesome
 
 * Five stars field on comment form.
 * Display rating bar template above/below the Post/Page content.
-* You can use disable auto placement and use shortcodes to view rating bar.
+* You can disable auto placement and use shortcodes to view rating bar.
 * You can hide rating bar from posts or pages.
 
 #### Shortcodes:
