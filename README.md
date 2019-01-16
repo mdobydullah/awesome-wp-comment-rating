@@ -22,6 +22,12 @@ Download from [WordPress Plugin Directory](https://wordpress.org/plugins/awesome
 * Template gauge chart : [awcr_gauge_chart]
 * Template gaming bar : [awcr_gaming_bar]
 
+#### Shortcodes in PHP:
+
+You can easily use shortcodes in a php file. Methods:
+* Method 1: <?php echo do_shortcode( "[awcr_gauge_chart]" ); ?>
+* Method 2: <?php echo apply_filters( 'the_content',"[awcr_gauge_chart]"); ?>
+
 ## Installation
 
 How to install the plugin and get it working.
