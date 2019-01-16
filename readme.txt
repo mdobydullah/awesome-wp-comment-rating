@@ -35,8 +35,8 @@ Awesome WP Comment Rating allows users to provide star rating on comment form of
 = SHORTCODES in PHP =
 
 You can easily use shortcodes in a php file. Methods:
-* Method 1: <?php echo do_shortcode( "[awcr_gauge_chart]" ); ?>
-* Method 2: <?php echo apply_filters( 'the_content',"[awcr_gauge_chart]"); ?>
+* Method 1: echo do_shortcode( "[awcr_gauge_chart]" );
+* Method 2: echo apply_filters( 'the_content',"[awcr_gauge_chart]");
 
 👉 See more information: [GitHub](https://github.com/mdobydullah/awesome-wp-comment-rating)
 
