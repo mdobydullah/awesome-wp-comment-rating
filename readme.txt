@@ -42,6 +42,14 @@ How to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to Settings -> Awesome WP Comment Rating to modify options
 
+== Screenshots ==
+
+1. Star field on comment form.
+2. Rating bar on post/page.
+3. Preview rating bars.
+4. Basic Settings.
+5. Star field customization.
+
 == Changelog ==
 
 = 1.0 =

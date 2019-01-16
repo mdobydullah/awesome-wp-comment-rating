@@ -45,3 +45,11 @@ How to install the plugin and get it working.
 ## LICENCE
 
 * [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+
+Changelog:
+----------------------
+```
+v1.0 (Jan 14, 2018)
+------------------------
+- [new] Initial version released
+```
