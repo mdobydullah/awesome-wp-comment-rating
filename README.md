@@ -2,6 +2,8 @@
 
 Awesome WP Comment Rating allows users to provide star rating on comment form of WordPress posts, custom posts or pages. Integration is very easy and simple.
 
+Download from [WordPress Plugin Directory](https://wordpress.org/plugins/awesome-wp-comment-rating/)
+
 #### Stars Rating are Displayed as:
 
 * Five stars field on comment form.
